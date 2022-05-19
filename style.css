@@ -1,64 +1,90 @@
 .flexContainer {
     display: flex;
-    flex-direction: row;
 }
 
 .container1 {
+    display: flex;
     flex-basis: 100%;
+    flex-direction: column;
     height: 100vh;
 }
+
+
 
 .container2 {
     display: flex;
-    flex-wrap: wrap ;
-    flex-direction: column;
-    background-color: black;
     flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: auto;
+    background-color: black;
     height: 100vh;
 }
 
-.content {
+.logo {
+    width: 2.5em;
+    height: 2.5em;
     margin-top: 1em;
-    margin-left: 4em;
+}
+
+.content {
+    margin-left: 2em;
+    margin-bottom: 5em;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 h1 {
     color: white;
-    margin-top: 2em;
+    margin-top: 1em;
+    font-size: 4em;
 }
 
 h2 {
     color: white;
     margin-top: 2em;
     margin-bottom: 2em;
+    font-size: 2em;
 }
 
 h3 {
     color: white;
 }
 
-p {
+.termsAndConditions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: gray;
     font-size: 0.75em;
+    margin-top: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: deepskyblue;
 }
 
 .backgroundImage {
     height: 100vh;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
 button {
     border: 1em;
     border-radius: 25px;
     width: 20em;
-    height: 2em;
+    height: 2.5em;
+    font-size: 1em;
     text-align: center;
+
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -70,10 +96,24 @@ button {
     font-weight: bold;
 }
 
+.txtAboveButton {
+    color: white;
+    font-size: 1em;
+    margin-left: 7em;
+}
+
 #button3 {
     background-color: deepskyblue;
     color: white;
     font-weight: bold;
+}
+
+#button3:hover {
+    background-color: #0099ff;
+}
+
+#button3:active {
+    background-color: #007acc;
 }
 
 #button4 {
@@ -81,21 +121,70 @@ button {
     color: deepskyblue;
     font-weight: bold;
     border-style: solid;
-    border-color: white;
+    border-color: gray;
     border-width: 1px;
+    margin-bottom: 4em;
 }
 
- /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...}*/
+#button4:hover {
+    background-color: #262626;
+}
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- /*@media only screen and (min-width: 600px) {...}*/
- 
- /* Medium devices (landscape tablets, 768px and up) */
- /*@media only screen and (min-width: 768px) {...}*/
- 
- /* Large devices (laptops/desktops, 992px and up) */
- /*@media only screen and (min-width: 992px) {...}*/
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- /*@media only screen and (min-width: 1200px) {...}*/ 
+#button4:active {
+    background-color: #444444;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: auto;
+    background-color: black;
+    color: gray;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer ul li {
+    display: inline-table;
+}
+
+.footList {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyright {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+
+  }*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+  @media only screen and (min-width: 600px) {
+
+  }*/
+
+/* Medium devices (landscape tablets, 768px and up) 
+  @media only screen and (min-width: 768px) {
+  
+  } */
+
+/* Large devices (laptops/desktops, 992px and up) 
+  @media only screen and (min-width: 992px) {
+
+  }*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+  @media only screen and (min-width: 1200px) {
+
+  }*/
