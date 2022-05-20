@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@font-face {
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+* {
+    background-color: black;
+}
+
 .flexContainer {
-    max-height: 950px;
+    max-width: 1500px;
+    min-width: 330px;
     display: flex;
 }
 
@@ -26,7 +44,6 @@
     flex-shrink: auto;
     flex-direction: column;
     flex-shrink: auto;
-    background-color: black;
 }
 
 .logo {
@@ -40,17 +57,10 @@
     margin-bottom: 5em;
 }
 
-h1,
-h2,
-h3,
-p {
-    font-family: Tahoma, Verdana, sans-serif;
-}
-
 h1 {
     color: white;
     margin-top: 1em;
-    font-size: 3.75em;
+    font-size: 5em;
 }
 
 h2 {
@@ -92,10 +102,28 @@ button {
 
 #button1 {
     margin-bottom: 1em;
+    background-color: white;
+}
+
+#button1:hover {
+    background-color: #f0f4fa;
+}
+
+#button1:active {
+    background-color: #d5dae0;
 }
 
 #button2 {
     font-weight: bold;
+    background-color: white;
+}
+
+#button2:hover {
+    background-color: #f0f4fa;
+}
+
+#button2:active {
+    background-color: #d5dae0;
 }
 
 .txtAboveButton {
@@ -165,22 +193,34 @@ footer ul li {
     justify-content: center;
 }
 
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 350px) {
+    h1 {
+        font-size: 3.25em;
+    }
 
-  }*/
+    button {
+        width: 15em;
+        margin-left: 1.25em;
+        height: 2.41em;
+    }
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) 
-  @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 
-  }*/
+    h1 {
+        font-size: 4em;
+    }
+}
 
-/* Medium devices (landscape tablets, 768px and up) 
-  @media only screen and (min-width: 768px) {
-  
-  } */
+@media only screen and (min-width: 800px) {
 
-/*Large devices (laptops/desktops, 1000px and up) 
-  @media only screen and (min-width: 1040px) {
+    h1 {
+        font-size: 4em;
+    }
+}
 
-  }*/
+@media only screen and (max-width: 1000px) {
+    .flexContainer {
+        flex-wrap: wrap-reverse;
+    }
+}
