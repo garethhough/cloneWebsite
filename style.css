@@ -95,6 +95,7 @@ button {
     height: 2.3em;
     font-size: 1em;
     text-align: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -116,6 +117,7 @@ button {
 #button2 {
     font-weight: bold;
     background-color: white;
+    text-align: center;
 }
 
 #button2:hover {
@@ -222,5 +224,20 @@ footer ul li {
 @media only screen and (max-width: 1000px) {
     .flexContainer {
         flex-wrap: wrap-reverse;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    h1 {
+        margin-top: 1em;
+        font-size: 5.2em;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 }
