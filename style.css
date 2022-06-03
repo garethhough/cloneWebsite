@@ -103,7 +103,7 @@ button {
 
 #button1 {
     margin-bottom: 1em;
-    background: transparent url(https://i.ibb.co/dtFH3Vs/google.jpg);
+    background: transparent url(./images/google.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ button {
 
 #button2 {
     font-weight: bold;
-    background: transparent url(https://i.ibb.co/m88Tthf/sign-in-with-apple.jpg);
+    background: transparent url(./images/apple.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
