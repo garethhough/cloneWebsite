@@ -103,29 +103,18 @@ button {
 
 #button1 {
     margin-bottom: 1em;
-    background-color: white;
-}
-
-#button1:hover {
-    background-color: #f0f4fa;
-}
-
-#button1:active {
-    background-color: #d5dae0;
+    background-image: url(https://i.ibb.co/dtFH3Vs/google.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #button2 {
     font-weight: bold;
-    background-color: white;
-    text-align: center;
-}
-
-#button2:hover {
-    background-color: #f0f4fa;
-}
-
-#button2:active {
-    background-color: #d5dae0;
+    background-image: url(https://i.ibb.co/m88Tthf/sign-in-with-apple.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .txtAboveButton {
