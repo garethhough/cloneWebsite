@@ -59,15 +59,12 @@ p {
 
 h1 {
     color: white;
-    margin-top: 1em;
-    font-size: 5em;
+    margin-top: 0.4em;
 }
 
 h2 {
     color: white;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 h3 {
@@ -81,6 +78,7 @@ h3 {
     color: gray;
     font-size: 0.75em;
     margin-top: 1em;
+    margin-bottom: 5em;
 }
 
 a {
@@ -196,37 +194,29 @@ footer ul li {
     }
 }
 
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 500px) {
     h1 {
-        font-size: 4em;
+        font-size: 3.75em;
     }
 }
 
-@media only screen and (min-width: 800px) {
-
-    h1 {
-        font-size: 4em;
-    }
-}
 
 @media only screen and (max-width: 1000px) {
     .flexContainer {
         flex-wrap: wrap-reverse;
     }
 
-    h2 {
-        font-size: 2.5em;
+    h1 {
+        font-size: 4em;
     }
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1100px) {
     h1 {
-        margin-top: 1em;
-        font-size: 5.2em;
+        font-size: 4.5em;
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
